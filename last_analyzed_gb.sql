@@ -1,0 +1,1 @@
+select trunc(LAST_ANALYZED), count(*) from dba_tables where owner = 'DWH' group by trunc(LAST_ANALYZED);

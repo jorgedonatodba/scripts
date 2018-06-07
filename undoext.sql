@@ -1,0 +1,1 @@
+select status, count(*) Num_Extents, sum(blocks) Num_Blocks, round((sum(bytes)/1024/1024),2) MB from dba_undo_extents group by status order by status;
